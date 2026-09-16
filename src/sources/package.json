@@ -1,0 +1,7 @@
+{
+  "name": "apikuoshi-sources",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marker package for APIKuoshi internal engine sub-trees.",
+  "type": "module"
+}
