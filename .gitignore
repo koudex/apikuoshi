@@ -1,0 +1,7 @@
+node_modules/
+dist/
+!src/sources/vault/dist/
+.env
+*.log
+results.json
+.DS_Store

@@ -1,0 +1,7 @@
+{
+  "name": "apikuoshi-lane-ishi",
+  "version": "1.0.0",
+  "description": "APIKuoshi internal data lane (prebuilt).",
+  "type": "commonjs",
+  "license": "MIT"
+}

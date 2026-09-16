@@ -1,0 +1,50 @@
+{
+  "name": "apikuoshi",
+  "version": "2.0.0",
+  "description": "APIKuoshi — one anime REST API: search, browse, metadata and playback through a single normalized surface, with the one-call /api/chain streaming pipeline (resolve → info → episodes → servers → streams → probe).",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node scripts/ensure-dist.js || node -e \"process.exit(0)\"",
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node scripts/double-check.js",
+    "test:live": "node scripts/test_all_endpoints.mjs"
+  },
+  "keywords": [
+    "anime",
+    "api",
+    "rest",
+    "scraper",
+    "streaming",
+    "hls",
+    "streaming-chain"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "compression": "^1.7.5",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "got-scraping": "^4.0.3",
+    "jsdom": "^22.1.0",
+    "node-cache": "^5.1.2"
+  },
+  "optionalDependencies": {
+    "redis": "^5.5.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.16",
+    "@types/express": "^4.17.21",
+    "@types/cheerio": "^0.22.35",
+    "@types/cors": "^2.8.17",
+    "@types/crypto-js": "^4.2.2"
+  }
+}
